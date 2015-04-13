@@ -1,5 +1,5 @@
 # Javascript Address Book for Epicodus
-## by James Nielson
+## by James Nielson and Kyle Bulloch
 ### Date: April 09, 2015
 #### Description
 A web app to store and retrieve your peeps's digits.
@@ -8,7 +8,7 @@ A web app to store and retrieve your peeps's digits.
 1. Clone this git repository
 2. Start the web app by loading address-book.html in your browser
 
-#### Copyright © 2015, James Nielson
+#### Copyright © 2015, James Nielson and Kyle Bulloch
 
 #### License: [MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE)  
 
