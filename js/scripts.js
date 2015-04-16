@@ -46,6 +46,7 @@ jQuery(document).ready(function() {
 
     $('#contact-list').show();
     $('#contacts-list').show();
+    $(".new-address").hide();
     event.preventDefault();
   });
 
