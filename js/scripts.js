@@ -15,8 +15,10 @@ jQuery(document).ready(function() {
       var state = $(this).find("input.new-state").val();
       var zip = $(this).find("input.new-zip").val();
 
+      if (street || city || state || zip) {
       var newAddress = { street: street, city: city, state: state, zip: zip };
       contact.addresses.push(newAddress);
+      }
     });
 
     $("ul#contact-list").append("<li><span class='contact'>" +
@@ -46,13 +48,13 @@ jQuery(document).ready(function() {
 
     $('#contact-list').show();
     $('#contacts-list').show();
-    $(".new-address").hide();
+    $("#more-address-forms").hide();
     event.preventDefault();
   });
 
   $("#add-address").click(function() {
     $("#new-addresses").append(
-      '<div class="new-address">' +
+      '<div class="new-address" id="more-address-forms">' +
         '<div class="form-group">' +
            '<h3>New Address</h3>' +
            '<input type="text" class="form-control new-street" placeholder="New Street address">' +
