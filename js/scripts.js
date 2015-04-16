@@ -37,6 +37,23 @@ jQuery(document).ready(function() {
     $("input#zip").val("");
 
     $('#contact-list').show();
+    $('#contacts-list').show();
     event.preventDefault();
+  });
+
+  $("#add-address").click(function() {
+    $("#new-addresses").append(
+      '<div class="new-address">' +
+        '<div class="form-group">' +
+           '<h3>New Address</h3>' +
+           '<input type="text" class="form-control new-street" placeholder="New Street address">' +
+         '</div>' +
+         '<div class="form-group">' +
+           '<input type="text" class="form-control new-city" placeholder="New City">' +
+         '</div>' +
+         '<div class="form-group">' +
+           '<input type="text" class="form-control new-state" placeholder="New State">' +
+         '</div>' +
+       '</div>');
   });
 });

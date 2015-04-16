@@ -16,7 +16,7 @@
 }
 
 body {
-    background-color: #009999;
+    background-color: #A37547;
 }
 
 h1, h2, h3 {
@@ -25,4 +25,8 @@ h1, h2, h3 {
 
 .form-control {
     color: black;
+}
+
+#contacts-list {
+  display: none;
 }
